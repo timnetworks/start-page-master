@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
+
+/* Style the video: 100% width and height to cover the entire window */
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* Style text highlights */
+::selection {
+  background: #c45190; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #c45190; /* Gecko Browsers */
+}
+
+body {
+	background-color: #1c1c1c;
+	overflow: hidden;
+}
+div#sites {
+	width: 810px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	padding: 35px 20px 5px 20px;
+	background-color: #ffdbf6; 
+	opacity: .9;
+	/*transition: .4s opacity ease;/* .01s top linear, .01s left linear; needs to be half the slep value */
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+input[type=text]#duck {
+	width: 800px;
+	box-sizing: border-box;
+	font-size: 32px;
+	transition: .2s font-size;
+	background-color: #2d1533;
+	color: white;
+	border: none;
+	margin: 5px 5px;
+}
+input[type=text]#duck:focus {
+	font-size: 72px;
+}
+@media only screen and (max-width: 810px) {
+	div#sites {
+		width: 260px;
+		transform: translate(-50%, 0%);
+		top: 0px;
+	}
+	input[type=text]#duck {
+		width: 260px;
+	}
+}
+div#sites div.column {
+	display: inline-block;
+	margin: 0px 5px;
+	vertical-align: top;
+	margin-bottom: -10px;
+}
+
+.ip {
+	float: right;
+	padding: 10px;
+	font-size: 0.6em;
+}
+
+
+a.clrbtn.tiny {
+	height: 40px;
+}
+a.clrbtn.medium {
+	height: 100px;
+}
+a.clrbtn.big {
+	height: 160px;
+}
+
+a.clrbtn {
+	cursor: pointer;
+	width: 250px;
+	background-color: red;
+	display: block;
+	padding: 5px;
+	margin: 10px 0px;
+	color: white;
+	position: relative;
+	background-position: center center !important;
+	background-size: 105% !important;
+	font-weight: 900;
+	text-decoration: none;
+	vertical-align: bottom;
+	transition: .35s filter;
+	position: relative;
+	overflow: hidden;
+}
+a.clrbtn img {
+	width: 105%;
+	position: absolute;
+	z-index: 0;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	filter: none;
+	transition: .35s filter;
+}
+a.clrbtn p {
+	z-index: 5;
+	position: absolute;
+	bottom: -10px;
+}
+a.clrbtn span {
+	z-index: 5;
+	position: absolute;
+	left: 0px;
+	font-size: 9px;
+	font-weight: 400;
+	color: black;
+	padding: 0px 5px;
+	background-color: inherit;
+}
+a.clrbtn:after, a.clrbtn:before {
+	content: "";
+	padding: 5px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid;
+	border-color: inherit;
+	opacity: 0;
+	transition: .35s opacity;
+	z-index: 2;
+}
+a.clrbtn:before {
+	background-color: inherit;
+}
+a.clrbtn:focus {
+	outline: none;
+	border: none;
+}
+a.clrbtn:hover:after, a.clrbtn:focus:after {
+	opacity: 1;
+}
+a.clrbtn:hover:before, a.clrbtn:focus:before {
+	opacity: .3;
+}
