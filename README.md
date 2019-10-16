@@ -10,10 +10,10 @@ Search terms are adapted to DuckDuckGo's search algorithm. Prefixing your search
 
 0. 'Tab' key highlights search field
 1. `{search term}` yields duckduckgo results
-5. `!v {search term}` yields duckduckgo video results
-5. `!n {search term}` yields duckduckgo news results
-2. `!q {search term}` yields quora results
-4. `!w {search term}` yields wikipedia results
+2. `!v {search term}` yields duckduckgo video results
+3. `!n {search term}` yields duckduckgo news results
+4. `!q {search term}` yields quora results
+5. `!w {search term}` yields wikipedia results
 5. `!e {search term}` yields ebay results
 5. `!r {search term}` yields reddit results
 5. `!t {search term}` yields thesaurus results
@@ -33,6 +33,9 @@ Search terms are adapted to DuckDuckGo's search algorithm. Prefixing your search
 5. `!c {search term}` yields cnet results
 5. `!b {search term}` yields bing results
 5. `!m {search term}` yields maps results
+
+For more !Bang options follow [this link](https://start.duckduckgo.com/bang?)
+
 
 ### screenshot:
 
